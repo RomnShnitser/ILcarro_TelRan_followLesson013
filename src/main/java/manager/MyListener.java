@@ -1,0 +1,44 @@
+package manager;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.events.AbstractWebDriverEventListener;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class MyListener extends AbstractWebDriverEventListener {
+	Logger logger = LoggerFactory.getLogger(MyListener.class);
+
+	public MyListener () {
+		super();
+	}
+
+	@Override
+	public void beforeFindBy (By by, WebElement element, WebDriver driver) {
+		super.beforeFindBy(by, element, driver);
+		logger.info("Start Searching element :: " + by);
+	}
+
+	@Override
+	public void afterFindBy (By by, WebElement element, WebDriver driver) {
+		super.afterFindBy(by, element, driver);
+		logger.info("End : The Element with current locator - FOUND");
+	}
+
+	@Override
+	public void onException (Throwable throwable, WebDriver driver) {
+		super.onException(throwable, driver);
+		logger.info("ERROR! SOMETHING WENT WRONG!!!\n\n");
+		logger.info(" = throwable.getMessage():\n" + throwable.getMessage()+"\n\n");
+	//	logger.info("throwable.fillInStackTrace().getMessage()" + throwable.fillInStackTrace().getMessage()+"\n\n");
+
+		int i = (int) (System.currentTimeMillis() / 1000) % 3600;
+		String link = "src/test/screenshots/screenshot-" + i + ".png";
+		Helper_Base helperBase = new Helper_Base(driver);
+		helperBase.takesScreenshot(link);
+		logger.info("See screenshot: " + link);
+	}
+
+
+}

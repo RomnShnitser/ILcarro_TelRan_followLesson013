@@ -1,0 +1,28 @@
+01:43:39 INFO  TestBase || TEST STARTED :: loginTestModel
+01:43:39 INFO  TestBase || - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+01:43:39 INFO  m.Listen || Start Searching element :: By.xpath: //a[normalize-space()='Logout']
+01:43:39 INFO  m.Listen || End : The Element with current locator - FOUND
+01:43:39 INFO  m.Listen || Start Searching element :: By.xpath: //a[@class='navigation-link'][normalize-space()='Log in']
+01:43:39 INFO  m.Listen || End : The Element with current locator - FOUND
+01:43:39 INFO  m.Listen || Start Searching element :: By.xpath: //input[@id='email']
+01:43:39 INFO  m.Listen || End : The Element with current locator - FOUND
+01:43:39 INFO  m.Listen || Start Searching element :: By.xpath: //input[@id='password']
+01:43:39 INFO  m.Listen || End : The Element with current locator - FOUND
+01:43:39 INFO  m.Listen || Start Searching element :: By.xpath: //button[@type='submit']
+01:43:39 INFO  m.Listen || End : The Element with current locator - FOUND
+01:43:41 INFO  m.Listen || Start Searching element :: By.cssSelector: .dialog-container
+01:43:41 INFO  m.Listen || End : The Element with current locator - FOUND
+01:43:41 INFO  m.Listen || Start Searching element :: By.xpath: //button[@type='button']
+01:43:41 INFO  m.Listen || End : The Element with current locator - FOUND
+01:43:42 INFO  m.Listen || Start Searching element :: By.xpath: //a[normalize-space()='Logout']
+01:43:42 INFO  m.Listen || End : The Element with current locator - FOUND
+01:43:42 INFO  m.Listen || Start Searching element :: By.xpath: //a[normalize-space()='Logout']
+01:43:42 INFO  m.Listen || End : The Element with current locator - FOUND
+01:43:42 INFO  m.Listen || Start Searching element :: By.cssSelector: a.logo
+01:43:42 INFO  m.Listen || End : The Element with current locator - FOUND
+01:43:42 INFO  TestBase || - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+01:43:42 INFO  TestBase || TEST ENDED :: loginTestModel
+01:43:42 INFO  TestBase || 
+================================================================================================================================
+
+
